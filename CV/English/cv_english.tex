@@ -1,0 +1,124 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Álvaro}{Feal Fajardo}
+%\title{Currículum Vitae}      
+\address{310 Western Ave}{02139, Cambridge, MA}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+18572302236}                   % optional, remove / comment the line if not wanted
+% %\phone[fixed]{981902773}                    % optional, remove / comment the line if not wanted
+\email{alvarofeal@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2018--2022}{PhD in Computer Science}{Universidad Carlos III de Madrid}{Madrid}{}{Advised by Prof. Narseo Vallina-Rodriguez at IMDEA Networks Institute. Research focused on the analysis of privacy and security issues on mobile and the web using novel methodologies that combine static and dynamic analysis techniques.}
+\cventry{2016--2017}{Master in Software and Systems}{Universidad Politécnica de Madrid}{Madrid}{}{}
+\cventry{2012--2016}{Bachelor in Computer Engineering}{Universidade da Coruña}{A Coruña}{}{}
+
+\section{Short Bio}
+\cvitem{Current Role}{Internet Measurements Researcher at Cisco ThousandEyes}
+\cvitem{Description}{I leverage production data to deliver improvements to ThousandEyes products and develop proof-of-concepts to drive innovation for enterprise customers.}
+\cvitem{Recognition}{My research on Android App's security and privacy has been published in venues such as USENIX Security, ACM IMC, PETS Symposium, with over 850 citations and 1 awarded US patent. It has been featured in international media outlets including Le Monde, El Pais, CNET and Business Insider and lead me to receive awards such as the Distinguished Paper Award at USENIX Security'19, the Personal Data Protection Research Award "Emilio Aced" from AEPD (2020, 2021), and the CNIL's Privacy Award (2021).}
+
+
+\section{Work experience}
+
+\cventry{2024--Present}{Internet Measurements Researcher}{Cisco ThousandEyes}{Remote}{}{Analyzing large-scale network and endpoint telemetry data to enhance product capabilities. Building innovative proof-of-concepts and data-driven solutions for enterprise monitoring and digital experience management.\newline{}%
+}
+
+\cventry{2022--2024}{Senior Research Scientist}{Northeastern University}{Boston, MA}{}{Working with Prof. David Choffnes' team on security and privacy research. Led the development of the Android app for the National Internet Observatory.\newline{}%
+}
+
+\cventry{2022--2022}{Postdoctoral Researcher}{Northeastern University}{Boston, MA}{}{Research on security and privacy topics with Prof. David Choffnes' team.\newline{}%
+}
+
+\cventry{2018--2022}{PhD Student}{IMDEA Networks Institute}{Madrid}{}{Research under Prof. Narseo Vallina-Rodriguez's supervision on Android app privacy, web privacy, and network measurements.\newline{}%
+}
+
+\cventry{2017}{Research Intern in Computer Security and Privacy}{IMDEA Software Institute}{Madrid}{}{Working under Prof. Carmela Troncoso's supervision on Android app privacy and anonymous voting schemes.\newline{}%
+}
+
+
+\section{Publications}
+
+\begin{enumerate}
+\item J. Gamba, A.F. Zanella, R. Morla, K. Schomp, \textbf{Á. Feal}, A.M. Kakhki. \textit{Lost in Encryption: Monitoring Audio and Video Flows without Payload in Video-Conferencing Applications.} Proceedings of the 1st Workshop on Next-Generation Network Observability, 2025.
+
+\item A. Pradeep, J. Gunawan, \textbf{Á. Feal}, W. Hartzog, D. Choffnes. \textit{Gig Work at What Cost? Exploring Privacy Risks of Gig Work Platform Participation in the US.} Proceedings on Privacy Enhancing Technologies (PoPETS), 2025.
+
+\item \textbf{Á. Feal}, J. Gleason, P. Goel, J. Radford, K.C. Yang, J. Basl, M. Meyer, et al. \textit{Introduction to National Internet Observatory.} Workshop Proceedings of the 18th International AAAI Conference on Web and Social Media, 2024.
+
+\item J. Gamba, \textbf{Á. Feal}, E. Blazquez, V. Bandara, A. Razaghpanah, J. Tapiador, et al. \textit{Mules and Permission Laundering in Android: Dissecting Custom Permissions in the Wild.} IEEE Transactions on Dependable and Secure Computing, 2023.
+
+\item K. Hageman, \textbf{Á. Feal}, J. Gamba, A. Girish, J. Bleier, M. Lindorfer, J. Tapiador, et al. \textit{Mixed Signals: Analyzing Software Attribution Challenges in the Android Ecosystem.} IEEE Transactions on Software Engineering, 2023.
+
+\item A. Pradeep, \textbf{A. Feal}, J. Gamba, A. Rao, M. Lindorfer, N. Vallina-Rodriguez, et al. \textit{Not Your Average App: A Large-Scale Privacy Analysis of Android Browsers.} Proceedings on Privacy Enhancing Technologies (PoPETS), 2022.
+
+\item E. Blázquez, S. Pastrana, \textbf{Á. Feal}, J. Gamba, P. Kotzias, N. Vallina-Rodriguez, et al. \textit{Trouble Over-the-Air: An Analysis of FOTA Apps in the Android Ecosystem.} IEEE Symposium on Security and Privacy (SP), 2021.
+
+\item \textbf{Á. Feal}, P. Vallina, J. Gamba, S. Pastrana, A. Nappa, O. Hohlfeld, et al. \textit{Blocklist Babel: On the Transparency and Dynamics of Open Source Blocklisting.} IEEE Transactions on Network and Service Management, 2021.
+
+\item \textbf{Á. Feal}, J. Gamba, J. Tapiador, P. Wijesekera, J. Reardon, S. Egelman, et al. \textit{Don't Accept Candy from Strangers: An Analysis of Third-Party Mobile SDKs.} Data Protection and Privacy: Data Protection and Artificial Intelligence, 2021.
+
+\item P. Vallina, V. Le Pochat, \textbf{Á. Feal}, M. Paraschiv, J. Gamba, T. Burke, et al. \textit{Mis-shapes, Mistakes, Misfits: An Analysis of Domain Classification Services.} ACM Internet Measurement Conference (IMC), 2020.
+
+\item S. Farooqi, \textbf{Á. Feal}, T. Lauinger, D. McCoy, Z. Shafiq, N. Vallina-Rodriguez. \textit{Understanding Incentivized Mobile App Installs on Google Play Store.} ACM Internet Measurement Conference (IMC), 2020.
+
+\item \textbf{Á. Feal}, P. Calciati, N. Vallina-Rodriguez, C. Troncoso, A. Gorla. \textit{Angel or Devil? A Privacy Study of Mobile Parental Control Apps.} Proceedings on Privacy Enhancing Technologies (PoPETS), 2020.
+
+\item C. Han, I. Reyes, \textbf{Á. Feal}, J. Reardon, P. Wijesekera, N. Vallina-Rodriguez, et al. \textit{The Price is (Not) Right: Comparing Privacy in Free and Paid Apps.} Proceedings on Privacy Enhancing Technologies (PoPETS), 2020.
+
+\item E. Okoyomon, N. Samarin, P. Wijesekera, A. Elazari Bar On, \textbf{Á. Feal}, et al. \textit{On The Ridiculousness of Notice and Consent: Contradictions in App Privacy Policies.} Workshop on Technology and Consumer Protection (ConPro), 2019.
+
+\item C. Han, I. Reyes, A. Elazari Bar On, J. Reardon, \textbf{Á. Feal}, S. Egelman, et al. \textit{Do You Get What You Pay For? Comparing The Privacy Behaviors of Free vs. Paid Apps.} Workshop on Technology and Consumer Protection (ConPro), 2019.
+
+\item P. Vallina, \textbf{Á. Feal}, J. Gamba, N. Vallina-Rodriguez, A.F. Anta. \textit{Tales from the Porn: A Comprehensive Privacy Analysis of the Web Porn Ecosystem.} ACM Internet Measurement Conference (IMC), 2019.
+
+\item J. Reardon, \textbf{Á. Feal}, P. Wijesekera, A.E.B. On, N. Vallina-Rodriguez, et al. \textit{50 Ways to Leak Your Data: An Exploration of Apps' Circumvention of the Android Permissions System.} USENIX Security Symposium, 2019.
+\end{enumerate}
+
+\end{document}
+
+
+%% end of file `template.tex'.
